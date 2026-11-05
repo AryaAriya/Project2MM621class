@@ -24,6 +24,7 @@ function setup() {
   dataLink.style('font-family', 'Minecraftia'); 
   dataLink.style('font-size', '11px');
   dataLink.style('text-decoration', 'underline');
+  dataLink.style('z-index', '5');
 }
 
 function draw() {
