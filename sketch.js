@@ -174,7 +174,7 @@ function draw() {
      textSize(11);
      textAlign(CENTER, TOP);
      let linkTextWidth = 520;
-     text("Data Set Used:", dataLink.position (width / 2 - linkTextWidth / 2, maxColHeight + 20); 
+     text("Data Set Used:", dataLink.position (width / 2 - linkTextWidth / 2, maxColHeight + 20)); 
      text("Images are from Minecraft wiki; all images belong to Mojang", width / 2, maxColHeight + 50);
      text("Cursor is from https://www.rw-designer.com/cursor-library; cursor is from Minecraft Cursors set made by Neil", width / 2, maxColHeight + 80);
      text("Font is Minecraftia; font made by Andrew Tyler", width / 2, maxColHeight + 110);
