@@ -3,6 +3,7 @@ let iconData;
 let biomes = [];
 let icons = {};
 let customFont;
+let dataLink;
 let currentCanvasHeight = 4700;
 
 function preload(){
@@ -17,6 +18,12 @@ function setup() {
   for(let biomeName in iconData){
     icons[biomeName] = loadImage(iconData[biomeName]);
   }
+
+  dataLink = createA('https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/1.11/biomes.json', 'Data Set Used: https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/1.11/biomes.json', '_blank');
+  dataLink.style('color', 'black');
+  dataLink.style('font-family', 'Minecraftia'); 
+  dataLink.style('font-size', '11px');
+  dataLink.style('text-decoration', 'underline');
 }
 
 function draw() {
@@ -166,8 +173,8 @@ function draw() {
      fill(0);
      textSize(11);
      textAlign(CENTER, TOP);
-     let dataLink;
-     text("Data Set Used: https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/1.11/biomes.json", width / 2, maxColHeight + 20);
+     let linkTextWidth = 520;
+     dataLink.position(width / 2 - linkTextWidth / 2, maxColHeight + 20); 
      text("Images are from Minecraft wiki; all images belong to Mojang", width / 2, maxColHeight + 50);
      text("Cursor is from https://www.rw-designer.com/cursor-library; cursor is from Minecraft Cursors set made by Neil", width / 2, maxColHeight + 80);
      text("Font is Minecraftia; font made by Andrew Tyler", width / 2, maxColHeight + 110);
