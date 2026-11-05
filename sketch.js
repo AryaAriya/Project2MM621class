@@ -21,7 +21,7 @@ function setup() {
 
   dataLink = createA('https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/1.11/biomes.json', 'Data Set Used: https://github.com/PrismarineJS/minecraft-data/blob/master/data/pc/1.11/biomes.json', '_blank');
   dataLink.style('color', 'black');
-  dataLink.style('font-family', 'Minecraftia'); 
+  dataLink.style('font-family', customFont.getName()); 
   dataLink.style('font-size', '11px');
   dataLink.style('z-index', '5');
 }
@@ -32,7 +32,7 @@ function draw() {
   fill(0);
   textSize(32);
   textAlign(CENTER, TOP);
-  text("Minecraft 'Travel Map'", width /2, 20);
+  text("Minecraft Biome Travel Map", width /2, 20);
 
   fill(0);
   textSize(11);
