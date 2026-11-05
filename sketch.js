@@ -35,7 +35,7 @@ function draw() {
   fill(0);
   textSize(16);
   textAlign(CENTER, TOP);
-  text("Click on a biome to find more about it", width / 2, 110);
+  text("Click on a biome to find more about it", width / 2, 90);
 
   if (biomeData && biomes.length == 0){
     let rawData = Object.values(biomeData);
