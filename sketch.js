@@ -28,9 +28,14 @@ function draw() {
   text("Minecraft 'Travel Map'", width /2, 20);
 
   fill(0);
+  textSize(11);
+  textAlign(CENTER, TOP);
+  text("by Arya Aswini for Project 2", width / 2, 65);
+
+  fill(0);
   textSize(16);
   textAlign(CENTER, TOP);
-  text("Click on a biome to find more about it", width / 2, 65);
+  text("Click on a biome to find more about it", width / 2, 110);
 
   if (biomeData && biomes.length == 0){
     let rawData = Object.values(biomeData);
